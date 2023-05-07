@@ -1,0 +1,26 @@
+@import '../base/index';
+@import '../abstracts/index';
+@import '../pages/index';
+
+.catalog__card-lg {
+  width: 300px;
+  height: 300px;
+  margin: 15px;
+  background-color: $dark;
+
+  .catalog__card-lg--title {
+    color: $primary;
+  }
+  .catalog__card-lg--synopsis {
+    color: $primary;
+  }
+  .catalog__card-lg--text {
+    color: $light;
+  }
+  .catalog__card-lg--stars {
+    color: $primary;
+    .catalog__card-lg--stars-white {
+      color: $light;
+    }
+  }
+}

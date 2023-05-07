@@ -2,8 +2,8 @@
 @import '../abstracts/index';
 
 #catalog {
-    @include section($primary);
+  @include section($light-orange);
 }
-.section_title {
-    @include title($primary);
+.section__title--catalog {
+  @include title($primary);
 }

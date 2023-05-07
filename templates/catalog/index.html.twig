@@ -1,11 +1,23 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Catalogue{% endblock %}
+{% block title %}Catalogue
+{% endblock %}
 
 {% block body %}
-{# Section les Nouveautés#}
+	{# Section les Nouveautés#}
 	<section id="catalog">
-		<h2 class="section__title">Les Nouveautés</h2>
-		<div class="catalog d-flex col-11 row mx-auto justify-content></div>
+		<h2 class="section__title--catalog">Les Nouveautés</h2>
+		<div class="catalog container row col-12 d-flex justify-content-center mx-auto">
+			<div class="d-flex space-evenly">
+				{% include '_partials/_cardsCatalog.html.twig'%}
+				{% include '_partials/_cardsCatalog.html.twig'%}
+				{% include '_partials/_cardsCatalog.html.twig'%}
+			</div>
+			<div class="d-flex space-evenly">
+				{% include '_partials/_cardsCatalog.html.twig'%}
+				{% include '_partials/_cardsCatalog.html.twig'%}
+				{% include '_partials/_cardsCatalog.html.twig'%}
+			</div>
+		</div>
 	</section>
 {% endblock %}
